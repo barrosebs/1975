@@ -27,6 +27,8 @@ namespace PaymentContext.Domain.Entities
         public IReadOnlyCollection<Subscription> Subscriptions {get { return _subscriptions.ToArray(); } }
 
         public void AddSubscription(Subscription subscription){
+
+            
             var hasSubscrptionActive = false;
 
             foreach (var sub in _subscriptions)
